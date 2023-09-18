@@ -1,12 +1,12 @@
-$primary-color: #9356DC;
-$secondary-color: #FF79DA;
-$third-color: #99E2D0;
+@import "utilities/_variables.scss";
+@import "utilities/_typography.scss";
+@import "layout/_header.scss";
+@import "layout/_footer.scss";
+@import "components/_buttons.scss";
+@import "components/_cards.scss";
+@import "pages/_home.scss";
 
+html,
 body {
-    background-color: $third-color;
-    color: #fff;
-}
-
-h1 {
-    color: $primary-color;
+    font-family: $font-family;
 }
