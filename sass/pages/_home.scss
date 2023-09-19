@@ -1,0 +1,35 @@
+.operating {
+    .operating__card {
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+
+        .operating__card--nbr {
+            border-radius: 50%;
+            background-color: $primary-color;
+            color: #ffff;
+            font-size: 14px;
+            height: 24px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 24px;
+            position: absolute;
+            left: 5px;
+
+        }
+
+        .operating__card--icon {
+            color: #7e7e7e;
+            position: relative;
+            left: -20px;
+
+        }
+
+        .operating__card--txt {
+            font-size: 16px;
+            font-weight: 700;
+            text-align: center;
+        }
+    }
+}
