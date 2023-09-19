@@ -29,4 +29,23 @@
             font-weight: 500;
         }
     }
+
+    .header__title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        .header__title--title {
+            font-size: 24px;
+
+        }
+
+        .header__title--subtitle {
+            font-size: 18px;
+            font-weight: 300;
+            margin-top: 0;
+        }
+    }
 }
