@@ -1,4 +1,33 @@
 .footer {
     background-color: $grey-dark-color;
     color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    padding: 22px 25px;
+
+    a {
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    &__links {
+        font-size: 16px;
+        font-weight: 400;
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        margin-top: 16px;
+    }
+
+    &__icon-link {
+        font-weight: 500;
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    .fa-solid {
+        width: 11px;
+    }
+
 }

@@ -47,6 +47,30 @@
 .footer {
   background-color: #353535;
   color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  padding: 22px 25px;
+}
+.footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.footer__links {
+  font-size: 16px;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin-top: 16px;
+}
+.footer__icon-link {
+  font-weight: 500;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+.footer .fa-solid {
+  width: 11px;
 }
 
 .section {
