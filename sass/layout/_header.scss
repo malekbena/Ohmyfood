@@ -24,28 +24,29 @@
         gap: 17px;
 
 
-        .header__location--txt {
+        .header__input {
             font-size: 16px;
             font-weight: 500;
         }
     }
 
-    .header__title {
+    .header__txt {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
-        padding: 20px 15px;
+        padding: 30px 15px;
+        background-color: $bg-light;
+    }
 
-        .header__title--title {
-            font-size: 24px;
-        }
+    .header__title {
+        font-size: 24px;
+    }
 
-        .header__title--subtitle {
-            font-size: 18px;
-            font-weight: 300;
-            margin-top: 0;
-        }
+    .header__subtitle {
+        font-size: 18px;
+        font-weight: 300;
+        margin-top: 0;
     }
 }

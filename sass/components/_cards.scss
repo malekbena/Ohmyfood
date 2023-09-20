@@ -2,6 +2,7 @@
     border-radius: 15px;
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
     display: flex;
+    overflow: hidden;
 }
 
 /****Homepage Operating Cards****/
@@ -9,6 +10,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 30px;
+    background-color: $bg-light;
 
     &__nbr {
         border-radius: 50%;
@@ -39,17 +41,38 @@
 }
 
 /****Homepage Restaurant Cards****/
-.restaurants-card {
+.restaurant-card {
     box-sizing: border-box;
     display: flex;
+    flex-direction: column;
 
-    &-head {
+    &__head {
         width: 100%;
-
-        &__img {
-            object-fit: cover;
-            height: 231px;
-            width: 100%;
-        }
     }
+
+    &__img {
+        object-fit: cover;
+        height: 170px;
+        width: 100%;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        padding: 13px;
+    }
+
+    &__title {
+        font-size: 18px;
+        font-weight: 700;
+        margin: 0;
+    }
+
+    &__subtitle {
+        font-size: 17px;
+        font-weight: 300;
+        margin: 5px 0 0 0;
+    }
+
+
 }
