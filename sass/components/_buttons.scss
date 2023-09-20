@@ -1,3 +1,9 @@
+.btn {
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+
 .btn-rounded {
     border-radius: 25px;
     color: #fff;
@@ -5,4 +11,14 @@
     background: var(--Button-Gradient, linear-gradient(193deg, $primary-color -11.44%, $secondary-color 123.93%));
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
     padding: 13px 20px;
+}
+
+.btn-new {
+    background: $green-color;
+    color: $green-dark-color;
+    border-radius: 2px;
+    border: $green-color;
+    padding: 7px 9px;
+    position: absolute;
+    right: 12px;
 }
