@@ -17,8 +17,8 @@
     &__spinner {
         width: 50px;
         height: 50px;
-        border: 5px solid $primary-color;
-        border-bottom-color: $secondary-color;
+        border: 5px solid $secondary-color;
+        border-bottom-color: $primary-color;
         border-radius: 50%;
         animation: rotation 1s linear infinite;
     }
