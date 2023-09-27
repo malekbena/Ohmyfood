@@ -1,0 +1,14 @@
+//// Tablet view ////
+
+@media screen and (min-width: 768px) {
+    .main-container {
+        width: 100%;
+
+    }
+
+    .operating-container {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+}

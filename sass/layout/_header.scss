@@ -50,3 +50,13 @@
         margin-top: 0;
     }
 }
+
+/////Desktop view////////
+
+@media (min-width: 768px) {
+
+    .header__txt {
+        min-width: 100%;
+
+    }
+}

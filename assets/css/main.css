@@ -44,6 +44,16 @@
     width: 0;
   }
 }
+@media screen and (min-width: 768px) {
+  .main-container {
+    width: 100%;
+  }
+  .operating-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+}
 .header {
   width: 100%;
   display: flex;
@@ -90,6 +100,11 @@
   margin-top: 0;
 }
 
+@media (min-width: 768px) {
+  .header__txt {
+    min-width: 100%;
+  }
+}
 .footer {
   background-color: #353535;
   color: #ffffff;
@@ -128,6 +143,11 @@
   margin-top: 0;
 }
 
+@media screen and (min-width: 768px) {
+  .section {
+    padding: 50px 180px;
+  }
+}
 .btn {
   font-family: Roboto, sans-serif;
   font-size: 14px;
@@ -167,13 +187,11 @@
 .btn-like__heart {
   fill: none;
   stroke: #101010;
-  stroke-width: 0.5;
 }
 .btn-like__heart--gradient {
   fill: url(#gradient);
-  stroke: none;
   opacity: 0;
-  transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
 }
 .btn-like__heart--gradient:hover {
   opacity: 1;
