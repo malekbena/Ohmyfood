@@ -165,14 +165,18 @@
   font-weight: 300;
 }
 .btn-like__heart {
-  fill: transparent;
-  stroke: #000000;
-  stroke-width: 20px;
-  transition: all 0.4s ease-in-out;
+  fill: none;
+  stroke: #101010;
+  stroke-width: 0.5;
 }
-.btn-like__heart:hover {
-  fill: red;
-  stroke: red;
+.btn-like__heart--gradient {
+  fill: url(#gradient);
+  stroke: none;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+.btn-like__heart--gradient:hover {
+  opacity: 1;
 }
 
 .card {
