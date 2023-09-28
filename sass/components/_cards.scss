@@ -76,3 +76,29 @@
 
 
 }
+
+///Tablet view///
+
+///Desktop view///
+@media screen and (min-width: 1024px) {
+    .operating-card {
+        display: flex;
+        overflow: visible;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 50px;
+        width: calc(33% - 30px);
+        position: relative;
+
+
+        &__nbr {
+            position: absolute;
+            left: -10px;
+        }
+
+        &___icon {
+            position: relative;
+
+        }
+    }
+}

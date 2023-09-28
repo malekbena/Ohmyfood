@@ -51,7 +51,7 @@
   .operating-container {
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 30px;
   }
 }
 .header {
@@ -61,15 +61,15 @@
   justify-content: center;
   align-items: center;
 }
-.header .header__logo {
+.header__logo {
   padding: 13px 0;
 }
-.header .header__logo img {
+.header__logo img {
   -o-object-fit: cover;
      object-fit: cover;
   height: 36px;
 }
-.header .header__location {
+.header__location {
   background-color: #EAEAEA;
   color: #353535;
   width: 100%;
@@ -78,11 +78,11 @@
   align-items: center;
   gap: 17px;
 }
-.header .header__location .header__input {
+.header__location .header__input {
   font-size: 16px;
   font-weight: 500;
 }
-.header .header__txt {
+.header__txt {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -91,16 +91,19 @@
   padding: 30px 15px;
   background-color: #F6F6F6;
 }
-.header .header__title {
+.header__title {
   font-size: 24px;
 }
-.header .header__subtitle {
+.header__subtitle {
   font-size: 18px;
   font-weight: 300;
   margin-top: 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
+  .header__title {
+    font-size: 40px;
+  }
   .header__txt {
     min-width: 100%;
   }
@@ -143,7 +146,7 @@
   margin-top: 0;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .section {
     padding: 50px 180px;
   }
@@ -266,6 +269,24 @@
   margin: 5px 0 0 0;
 }
 
+@media screen and (min-width: 1024px) {
+  .operating-card {
+    display: flex;
+    overflow: visible;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 50px;
+    width: calc(33% - 30px);
+    position: relative;
+  }
+  .operating-card__nbr {
+    position: absolute;
+    left: -10px;
+  }
+  .operating-card___icon {
+    position: relative;
+  }
+}
 .restaurants {
   background-color: #F6F6F6;
 }
