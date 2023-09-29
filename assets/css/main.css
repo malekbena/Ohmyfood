@@ -44,7 +44,14 @@
     width: 0;
   }
 }
-@media screen and (min-width: 768px) {
+.restaurants-container {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/**** Desktop view ****/
+@media screen and (min-width: 1024px) {
   .main-container {
     width: 100%;
   }
@@ -52,6 +59,12 @@
     display: flex;
     flex-direction: row;
     gap: 30px;
+  }
+  .restaurants-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 100px;
   }
 }
 .header {
@@ -90,6 +103,7 @@
   text-align: center;
   padding: 30px 15px;
   background-color: #F6F6F6;
+  width: 100%;
 }
 .header__title {
   font-size: 24px;
@@ -103,9 +117,6 @@
 @media (min-width: 1024px) {
   .header__title {
     font-size: 40px;
-  }
-  .header__txt {
-    min-width: 100%;
   }
 }
 .footer {
@@ -140,15 +151,22 @@
 .section {
   padding: 50px 20px;
 }
-.section .section__title {
+.section__title {
   font-size: 24px;
   font-weight: 700;
   margin-top: 0;
 }
 
+.section + .restaurants {
+  background-color: #F6F6F6;
+}
+
 @media screen and (min-width: 1024px) {
   .section {
     padding: 50px 180px;
+  }
+  .section__title {
+    margin: 0 0 25px 0;
   }
 }
 .btn {
@@ -200,6 +218,7 @@
   opacity: 1;
 }
 
+/****Desktop view****/
 .card {
   border-radius: 15px;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
@@ -243,6 +262,7 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 .restaurant-card__head {
   width: 100%;
@@ -286,17 +306,13 @@
   .operating-card___icon {
     position: relative;
   }
+  .restaurant-card {
+    flex: 1 0 calc(50% - 100px);
+  }
+  .restaurant-card__img {
+    height: 230px;
+  }
 }
-.restaurants {
-  background-color: #F6F6F6;
-}
-
-.restaurants-cards {
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-}
-
 html,
 body {
   font-family: robotto, sans-serif;

@@ -1,14 +1,27 @@
-//// Tablet view ////
-
-@media screen and (min-width: 768px) {
-    .main-container {
-        width: 100%;
-
-    }
-
-    .operating-container {
+    .restaurants-container {
         display: flex;
-        flex-direction: row;
-        gap: 30px;
+        flex-direction: column;
+        gap: 18px;
     }
-}
+
+    /**** Desktop view ****/
+
+    @media screen and (min-width: 1024px) {
+        .main-container {
+            width: 100%;
+
+        }
+
+        .operating-container {
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+        }
+
+        .restaurants-container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 100px;
+        }
+    }

@@ -45,6 +45,7 @@
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    position: relative;
 
     &__head {
         width: 100%;
@@ -99,6 +100,14 @@
         &___icon {
             position: relative;
 
+        }
+    }
+
+    .restaurant-card {
+        flex: 1 0 calc(50% - 100px);
+
+        &__img {
+            height: 230px;
         }
     }
 }
