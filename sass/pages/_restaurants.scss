@@ -21,5 +21,31 @@
             font-family: Shrikhand;
             font-size: 28px;
             font-weight: 400;
+            margin: 0;
         }
+    }
+
+    .menu-cards {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+        &__title-border {
+            width: 40px;
+            border-top: 3px $border-menu solid;
+            margin-top: 5px;
+        }
+    }
+
+    .restaurant-page__btn {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .restbtn {
+            padding: 15px 50px;
+
+        }
+
     }

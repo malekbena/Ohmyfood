@@ -1,6 +1,5 @@
 .card {
     border-radius: 15px;
-    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
     display: flex;
     overflow: hidden;
 }
@@ -11,6 +10,7 @@
     align-items: center;
     margin-top: 30px;
     background-color: $bg-light;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 
     &__nbr {
         border-radius: 50%;
@@ -46,6 +46,8 @@
     display: flex;
     flex-direction: column;
     position: relative;
+    border-radius: 15px;
+    background-color: #ffff;
 
     a {
         text-decoration: none;
@@ -80,7 +82,45 @@
         margin: 5px 0 0 0;
     }
 
+}
 
+/****Restaurant card menu****/
+.menu-card {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
+
+    &__title {
+        margin: 0;
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 500;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 5px;
+    }
+
+    &__description {
+        margin: 0;
+        font-size: 16px;
+        font-weight: 300;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    &__price {
+        margin: 0;
+        font-size: 16px;
+        font-weight: 700;
+        color: $grey-dark-color;
+    }
 }
 
 ///Tablet view///
