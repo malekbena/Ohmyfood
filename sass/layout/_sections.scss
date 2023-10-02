@@ -14,12 +14,15 @@
 }
 
 .restaurant-section {
+    width: 100%;
+
     &__title {
         font-size: 16px;
         font-weight: 300;
         text-transform: uppercase;
         margin: 0;
     }
+
 }
 
 .starters {

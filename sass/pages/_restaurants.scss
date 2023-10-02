@@ -4,7 +4,6 @@
         &__img {
             img {
                 width: 100%;
-                height: 100%;
                 object-fit: cover;
             }
         }
@@ -48,4 +47,17 @@
 
         }
 
+    }
+
+    ///***Desktop view***///
+    @media screen and (min-width: 1024px) {
+        .restaurant-page {
+
+
+            &__img {
+                img {
+                    height: 400px;
+                }
+            }
+        }
     }
