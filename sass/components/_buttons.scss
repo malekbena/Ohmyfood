@@ -34,22 +34,25 @@
     border: none;
     background-color: transparent;
     font-size: 20px;
-    font-weight: 300;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    &__heart {
-        fill: none;
-        stroke: #101010;
-    }
 
-    &__heart--gradient {
-        fill: url(#gradient);
+    .fa-solid {
+        position: absolute;
+        font-size: 21px;
         opacity: 0;
-        transition: opacity 0.3s ease-in-out;
+        transition: opacity 400ms ease-in-out;
+        background: -webkit-linear-gradient($primary-color, $secondary-color);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
 
         &:hover {
             opacity: 1;
         }
-
     }
 }
 

@@ -236,18 +236,22 @@
   border: none;
   background-color: transparent;
   font-size: 20px;
-  font-weight: 300;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.btn-like__heart {
-  fill: none;
-  stroke: #101010;
-}
-.btn-like__heart--gradient {
-  fill: url(#gradient);
+.btn-like .fa-solid {
+  position: absolute;
+  font-size: 21px;
   opacity: 0;
-  transition: opacity 0.3s ease-in-out;
+  transition: opacity 400ms ease-in-out;
+  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-.btn-like__heart--gradient:hover {
+.btn-like .fa-solid:hover {
   opacity: 1;
 }
 
