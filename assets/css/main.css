@@ -297,6 +297,10 @@
   flex-direction: column;
   position: relative;
 }
+.restaurant-card a {
+  text-decoration: none;
+  color: inherit;
+}
 .restaurant-card__head {
   width: 100%;
 }

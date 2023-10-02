@@ -47,6 +47,11 @@
     flex-direction: column;
     position: relative;
 
+    a {
+        text-decoration: none;
+        color: inherit
+    }
+
     &__head {
         width: 100%;
     }
