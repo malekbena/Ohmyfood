@@ -4,6 +4,18 @@
         gap: 18px;
     }
 
+    .restaurant-page-container {
+        background-color: $bg-light;
+        border-radius: 25px 25px 0 0;
+        top: -50px;
+        position: relative;
+        padding: 20px;
+
+
+    }
+
+
+
     /**** Desktop view ****/
 
     @media screen and (min-width: 1024px) {

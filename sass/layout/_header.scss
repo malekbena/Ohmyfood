@@ -50,7 +50,16 @@
         font-weight: 300;
         margin-top: 0;
     }
+
+    .header-restaurant {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
 }
+
 
 /////Desktop view////////
 

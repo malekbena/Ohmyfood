@@ -56,5 +56,13 @@
     }
 }
 
+.btn-back {
+    position: absolute;
+    left: 20px;
+    text-decoration: none;
+    color: $grey-dark-color ;
+    font-size: 30px;
+}
+
 /****Desktop view****/
 @media screen and (min-width: 1024px) {}

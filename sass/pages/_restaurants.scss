@@ -1,0 +1,25 @@
+    .restaurant-page {
+        position: relative;
+
+        &__img {
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+    }
+
+    .restaurant-head {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        h1 {
+            font-family: Shrikhand;
+            font-size: 28px;
+            font-weight: 400;
+        }
+    }
