@@ -87,8 +87,7 @@
 /****Restaurant card menu****/
 .menu-card {
     display: flex;
-    flex-direction: column;
-    padding: 15px;
+    flex-direction: row;
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
 
     &__title {
@@ -101,6 +100,15 @@
     }
 
     &__content {
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        transition: all 0.4s ease-in-out;
+
+    }
+
+    &__subcontent {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -120,6 +128,32 @@
         font-size: 16px;
         font-weight: 700;
         color: $grey-dark-color;
+    }
+
+    &__checkbox {
+        width: 0;
+        opacity: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $green-color;
+        font-size: 25px;
+        transition: all 0.4s ease-in-out;
+
+        .fa-circle-check {
+            color: #ffff;
+        }
+    }
+
+    &:hover {
+        .menu-card__checkbox {
+            width: 5%;
+            opacity: 1;
+        }
+
+        .menu-card__content {
+            width: 95%;
+        }
     }
 }
 

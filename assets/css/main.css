@@ -390,8 +390,7 @@
 /****Restaurant card menu****/
 .menu-card {
   display: flex;
-  flex-direction: column;
-  padding: 15px;
+  flex-direction: row;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
 }
 .menu-card__title {
@@ -403,6 +402,13 @@
   overflow: hidden;
 }
 .menu-card__content {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  transition: all 0.4s ease-in-out;
+}
+.menu-card__subcontent {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -420,6 +426,26 @@
   font-size: 16px;
   font-weight: 700;
   color: #353535;
+}
+.menu-card__checkbox {
+  width: 0;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #99E2D0;
+  font-size: 25px;
+  transition: all 0.4s ease-in-out;
+}
+.menu-card__checkbox .fa-circle-check {
+  color: white;
+}
+.menu-card:hover .menu-card__checkbox {
+  width: 5%;
+  opacity: 1;
+}
+.menu-card:hover .menu-card__content {
+  width: 95%;
 }
 
 @media screen and (min-width: 1024px) {
