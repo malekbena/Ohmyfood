@@ -451,11 +451,11 @@
   color: white;
 }
 .menu-card:hover .menu-card__checkbox {
-  width: 5%;
+  width: 7%;
   opacity: 1;
 }
 .menu-card:hover .menu-card__content {
-  width: 95%;
+  width: 93%;
 }
 
 @media screen and (min-width: 1024px) {
@@ -528,6 +528,9 @@
 @media screen and (min-width: 1024px) {
   .restaurant-page__img img {
     height: 400px;
+  }
+  .restaurant-head h1 {
+    margin-right: 25px;
   }
 }
 html,

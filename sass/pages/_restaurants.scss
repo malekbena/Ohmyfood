@@ -52,12 +52,16 @@
     ///***Desktop view***///
     @media screen and (min-width: 1024px) {
         .restaurant-page {
-
-
             &__img {
                 img {
                     height: 400px;
                 }
+            }
+        }
+
+        .restaurant-head {
+            h1 {
+                margin-right: 25px;
             }
         }
     }
