@@ -48,12 +48,12 @@
 @media screen and (min-width: 768px) {
     .footer {
         flex-direction: row-reverse;
-        gap: 50px;
-        padding: 30px 25px;
+        gap: 25px;
+        padding: 15px 15px;
 
         &__links-wrapper {
             flex-direction: row;
-            gap: 30px;
+            gap: 15px;
             margin: 0;
         }
 
@@ -66,6 +66,18 @@
         &__default-links {
             flex-direction: row;
             align-items: center;
+        }
+    }
+}
+
+/***Desktop view***/
+@media screen and (min-width: 1200px) {
+    .footer {
+        padding: 30px 25px;
+        gap: 50px;
+
+        &__links {
+            gap: 30px;
         }
     }
 }
