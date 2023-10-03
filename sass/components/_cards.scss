@@ -43,10 +43,8 @@
 /****Homepage Restaurant Cards****/
 .restaurant-card {
     box-sizing: border-box;
-    display: flex;
     flex-direction: column;
     position: relative;
-    border-radius: 15px;
     background-color: #ffff;
 
     a {
@@ -159,15 +157,14 @@
 
 ///Tablet view///
 
-///Desktop view///
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
     .operating-card {
         display: flex;
         overflow: visible;
         justify-content: center;
         align-items: center;
         padding: 10px 50px;
-        width: calc(33% - 30px);
+        width: 33%;
         position: relative;
 
 
@@ -178,7 +175,6 @@
 
         &___icon {
             position: relative;
-
         }
     }
 
@@ -190,3 +186,6 @@
         }
     }
 }
+
+///Desktop view///
+@media screen and (min-width: 1024px) {}
