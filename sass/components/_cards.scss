@@ -145,12 +145,12 @@
 
     &:hover {
         .menu-card__checkbox {
-            width: 7%;
+            width: 10%;
             opacity: 1;
         }
 
         .menu-card__content {
-            width: 93%;
+            width: 90%;
         }
     }
 }
@@ -183,6 +183,16 @@
 
         &__img {
             height: 230px;
+        }
+    }
+
+    .menu-card:hover {
+        .menu-card__checkbox {
+            width: 7%;
+        }
+
+        .menu-card__content {
+            width: 93%;
         }
     }
 }
