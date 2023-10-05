@@ -52,7 +52,7 @@
 
 .restaurant-page-container {
   background-color: #F6F6F6;
-  border-radius: 25px 25px 0 0;
+  border-radius: 40px 40px 0 0;
   margin-top: -50px;
   position: relative;
   padding: 40px 20px;
@@ -319,6 +319,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-right: 20px;
 }
 .btn-like .fa-solid {
   position: absolute;
@@ -342,7 +343,7 @@
   font-size: 30px;
 }
 
-/****Desktop view****/
+/****Tablet view****/
 .card {
   border-radius: 15px;
   display: flex;
@@ -509,6 +510,7 @@
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  height: 275px;
 }
 
 .restaurant-head {
@@ -545,12 +547,19 @@
   padding: 15px 50px;
 }
 
+/***Tablet view***/
 @media screen and (min-width: 768px) {
   .restaurant-page__img img {
-    height: 400px;
+    height: 350px;
   }
   .restaurant-head h1 {
     margin-right: 25px;
+  }
+}
+/***Desktop view***/
+@media screen and (min-width: 1024px) {
+  .restaurant-page__img img {
+    height: 390px;
   }
 }
 html,

@@ -38,6 +38,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-right: 20px;
 
 
     .fa-solid {
@@ -64,5 +65,5 @@
     font-size: 30px;
 }
 
-/****Desktop view****/
-@media screen and (min-width: 1024px) {}
+/****Tablet view****/
+@media screen and (min-width: 768px) {}

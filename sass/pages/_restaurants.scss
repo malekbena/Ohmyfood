@@ -5,6 +5,7 @@
             img {
                 width: 100%;
                 object-fit: cover;
+                height: 275px;
             }
         }
 
@@ -49,12 +50,12 @@
 
     }
 
-    ///***Tablet view***///
+    /***Tablet view***/
     @media screen and (min-width: 768px) {
         .restaurant-page {
             &__img {
                 img {
-                    height: 400px;
+                    height: 350px;
                 }
             }
         }
@@ -62,6 +63,17 @@
         .restaurant-head {
             h1 {
                 margin-right: 25px;
+            }
+        }
+    }
+
+    /***Desktop view***/
+    @media screen and (min-width: 1024px) {
+        .restaurant-page {
+            &__img {
+                img {
+                    height: 390px;
+                }
             }
         }
     }
