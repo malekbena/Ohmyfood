@@ -321,6 +321,7 @@
   align-items: center;
   justify-content: center;
   margin-right: 20px;
+  cursor: pointer;
 }
 .btn-like .fa-solid {
   position: absolute;
