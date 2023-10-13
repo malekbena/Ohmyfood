@@ -470,18 +470,20 @@
 }
 .menu-card__checkbox {
   width: 0;
+  opacity: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #99E2D0;
   font-size: 25px;
-  transition: width 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 .menu-card__checkbox .fa-circle-check {
   color: white;
 }
 .menu-card:hover .menu-card__checkbox {
   width: 60px;
+  opacity: 1;
 }
 
 @media screen and (min-width: 768px) {

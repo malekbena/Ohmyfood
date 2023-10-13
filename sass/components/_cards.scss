@@ -140,12 +140,13 @@
 
     &__checkbox {
         width: 0;
+        opacity: 0;
         display: flex;
         justify-content: center;
         align-items: center;
         background-color: $green-color;
         font-size: 25px;
-        transition: width 0.4s ease-in-out;
+        transition: all 0.4s ease-in-out;
 
         .fa-circle-check {
             color: #ffff;
@@ -155,6 +156,7 @@
     &:hover {
         .menu-card__checkbox {
             width: 60px;
+            opacity: 1;
         }
     }
 }
