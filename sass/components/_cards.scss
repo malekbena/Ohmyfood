@@ -88,6 +88,22 @@
     flex-direction: row;
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
     cursor: pointer;
+    width: 100%;
+    justify-content: space-between;
+
+    &__left-box {
+        display: flex;
+        overflow: hidden;
+
+    }
+
+    &__text-box {
+        width: 100%;
+        padding: 15px;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
 
     &__title {
         margin: 0;
@@ -96,30 +112,21 @@
         font-weight: 500;
         text-overflow: ellipsis;
         overflow: hidden;
-    }
-
-    &__content {
-        padding: 15px;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        transition: all 0.4s ease-in-out;
-
-    }
-
-    &__subcontent {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin-top: 5px;
+        white-space: nowrap;
     }
 
     &__description {
-        margin: 0;
+        margin: 5px 0 0 0;
         font-size: 16px;
         font-weight: 300;
         text-overflow: ellipsis;
+        white-space: nowrap;
         overflow: hidden;
+    }
+
+    &__right-box {
+        display: flex;
+        flex-direction: row;
     }
 
     &__price {
@@ -127,17 +134,18 @@
         font-size: 16px;
         font-weight: 700;
         color: $grey-dark-color;
+        align-self: end;
+        padding: 15px;
     }
 
     &__checkbox {
         width: 0;
-        opacity: 0;
         display: flex;
         justify-content: center;
         align-items: center;
         background-color: $green-color;
         font-size: 25px;
-        transition: all 0.4s ease-in-out;
+        transition: width 0.4s ease-in-out;
 
         .fa-circle-check {
             color: #ffff;
@@ -146,12 +154,7 @@
 
     &:hover {
         .menu-card__checkbox {
-            width: 59px;
-            opacity: 1;
-        }
-
-        .menu-card__content {
-            width: calc(100% - 59px);
+            width: 60px;
         }
     }
 }

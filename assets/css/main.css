@@ -426,6 +426,18 @@
   flex-direction: row;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
   cursor: pointer;
+  width: 100%;
+  justify-content: space-between;
+}
+.menu-card__left-box {
+  display: flex;
+  overflow: hidden;
+}
+.menu-card__text-box {
+  width: 100%;
+  padding: 15px;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .menu-card__title {
   margin: 0;
@@ -434,52 +446,42 @@
   font-weight: 500;
   text-overflow: ellipsis;
   overflow: hidden;
-}
-.menu-card__content {
-  padding: 15px;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  transition: all 0.4s ease-in-out;
-}
-.menu-card__subcontent {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-top: 5px;
+  white-space: nowrap;
 }
 .menu-card__description {
-  margin: 0;
+  margin: 5px 0 0 0;
   font-size: 16px;
   font-weight: 300;
   text-overflow: ellipsis;
+  white-space: nowrap;
   overflow: hidden;
+}
+.menu-card__right-box {
+  display: flex;
+  flex-direction: row;
 }
 .menu-card__price {
   margin: 0;
   font-size: 16px;
   font-weight: 700;
   color: #353535;
+  align-self: end;
+  padding: 15px;
 }
 .menu-card__checkbox {
   width: 0;
-  opacity: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #99E2D0;
   font-size: 25px;
-  transition: all 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
 }
 .menu-card__checkbox .fa-circle-check {
   color: white;
 }
 .menu-card:hover .menu-card__checkbox {
-  width: 59px;
-  opacity: 1;
-}
-.menu-card:hover .menu-card__content {
-  width: calc(100% - 59px);
+  width: 60px;
 }
 
 @media screen and (min-width: 768px) {
