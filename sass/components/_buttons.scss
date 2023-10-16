@@ -42,6 +42,12 @@
     margin-right: 20px;
     cursor: pointer;
 
+    .fa-regular {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
 
     .fa-solid {
         position: absolute;
@@ -52,6 +58,9 @@
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
 
         &:hover {
             opacity: 1;
