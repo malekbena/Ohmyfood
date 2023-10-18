@@ -38,6 +38,14 @@
         font-weight: 700;
         text-align: center;
     }
+
+    &:hover {
+        cursor: pointer;
+
+        i {
+            color: $primary-color;
+        }
+    }
 }
 
 /****Homepage Restaurant Cards****/

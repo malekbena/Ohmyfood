@@ -400,6 +400,12 @@
   font-weight: 700;
   text-align: center;
 }
+.operating-card:hover {
+  cursor: pointer;
+}
+.operating-card:hover i {
+  color: #9356DC;
+}
 
 /****Homepage Restaurant Cards****/
 .restaurant-card {
