@@ -171,14 +171,18 @@
   padding-left: 60px;
 }
 .header form input {
-  text-align: left;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
   background-color: #EAEAEA;
   color: #353535;
   border: none;
-  font-size: 16px;
-  font-weight: 500;
-  padding: 16px 0 16px 10px;
-  margin-left: 6px;
+  text-align: left;
+  margin: 16px 0 16px 10px;
+  padding-left: 6px;
+}
+.header form input:focus {
+  outline: 1px solid #353535;
 }
 .header__txt {
   display: flex;
