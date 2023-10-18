@@ -14,21 +14,27 @@
         }
     }
 
-    &__location {
+    form {
         background-color: $grey-color;
         color: $grey-dark-color;
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 17px;
+        padding-left: 60px;
 
-
-        .header__input {
+        input {
+            text-align: left;
+            background-color: $grey-color;
+            color: $grey-dark-color;
+            border: none;
             font-size: 16px;
             font-weight: 500;
+            padding: 16px 0 16px 10px;
+            margin-left: 6px;
         }
     }
+
 
     &__txt {
         display: flex;

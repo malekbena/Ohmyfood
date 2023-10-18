@@ -39,6 +39,8 @@
   to {
     opacity: 0;
     display: none;
+    width: 0;
+    height: 0;
   }
 }
 .restaurants-container {
@@ -159,18 +161,24 @@
      object-fit: cover;
   height: 36px;
 }
-.header__location {
+.header form {
   background-color: #EAEAEA;
   color: #353535;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 17px;
+  padding-left: 60px;
 }
-.header__location .header__input {
+.header form input {
+  text-align: left;
+  background-color: #EAEAEA;
+  color: #353535;
+  border: none;
   font-size: 16px;
   font-weight: 500;
+  padding: 16px 0 16px 10px;
+  margin-left: 6px;
 }
 .header__txt {
   display: flex;
